@@ -1,7 +1,7 @@
 ﻿
 int Vvod()
 {
-    Console.WriteLine("Введите трехзначное число");
+    Console.WriteLine("Введите число");
     int number = Convert.ToInt32(Console.ReadLine());
     return number;
 }
@@ -20,6 +20,4 @@ int poisk(int chislo)
         return result;
     }
 
-int T = Vvod();
-int answer = poisk(T);
-Console.WriteLine(answer);
+Console.WriteLine(poisk(Vvod()));

@@ -13,6 +13,4 @@ int Find(int N)
      return answer;
     }
 
-int L = Vvod();
-int vtor = Find(L);
-Console.WriteLine(vtor);
+Console.WriteLine(Find(Vvod()));
