@@ -18,11 +18,11 @@ string Schet(int n)
             answer = "Это суббота";
             }
 
-        if (n == 7) {
+         if (n == 7) {
             answer = "Это воскресенье";
             }
 
-        if (n!=6 && n!=7) {
+         if (n!=6 && n!=7) {
             answer = "Это будний день";
             }
 
