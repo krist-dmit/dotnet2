@@ -16,7 +16,7 @@ int[] Vvod()
     cord[4] = Convert.ToInt16(Console.ReadLine());
     Console.WriteLine("Введите z2");
     cord[5] = Convert.ToInt16(Console.ReadLine());
-    Console.WriteLine(string.Join(' ',cord));
+    //Console.WriteLine(string.Join(' ',cord));
     return cord;
 }
 double S(int[] cord)
