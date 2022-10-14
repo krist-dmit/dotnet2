@@ -14,17 +14,24 @@
 // людей в магазине
 
 // Ответ: 4-5, 11-13
-string interval() 
+Console.WriteLine("Введите количество посещений: ");
+int count = Convert.ToInt32(Console.ReadLine());
+
+string interval(string text, int count) 
 {
-    string[] interval = new string[9];
-    Console.WriteLine("Введите интервал");
+    string interval = string.Empty;
+    Console.WriteLine(text);
     int i = 0;
-    while (i<=9)
+    while (i<=count-1)
     {
-        string interval[i] = Console.ReadLine();
+        interval = interval + " " + Console.ReadLine();
         i ++;
     }
     return interval;
 }
-string[] stringArray = interval;
-Console.Write(interval);
+string stringArray = interval("введите интервал", count); 
+Console.WriteLine(stringArray.Length);
+//Console.WriteLine(string.Join(' ',stringArray)); - Проверка
+string remover = "-";
+string chisla = stringArray.Replace(remover," ");
+Console.WriteLine(chisla);
