@@ -1,10 +1,10 @@
-﻿Console.WriteLine("Введите число: ");
-int number = Convert.ToInt16(Console.ReadLine());
+﻿
+Console.WriteLine("Введите число: ");
+int N = Convert.ToInt16(Console.ReadLine());
 int index = 1;
-while (index < number) 
-{
+while (index <= N) {
     if (index % 2 == 0){
-        Console.Write(index + " ");
-    }
+    Console.WriteLine(index);}
     index ++;
 }
+
