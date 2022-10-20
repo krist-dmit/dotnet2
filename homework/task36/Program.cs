@@ -20,6 +20,7 @@ int SumNechet (int[] array)
     }
     return result;
 }
+// i = i + 1  i+=1
 
 int[] array = Array(6);
 
