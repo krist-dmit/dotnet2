@@ -1,5 +1,6 @@
 ﻿int[] Array (int count, string text)
 {
+    Console.WriteLine(text);
     int[] result = new int[count];
     int i = 0;
     for (i=0; i < count; i++)
