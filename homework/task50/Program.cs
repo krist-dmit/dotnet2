@@ -21,7 +21,15 @@ void method(int[,] array)
     int row = Convert.ToInt32(Console.ReadLine());
     Console.WriteLine("Введите столбец");
     int column = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine(array[row-1,column-1]);
+    if (row > array.GetLength(0) || column > array.GetLength(1))
+    {
+        Console.WriteLine("Такого числа нет");
+    }
+    else
+    {
+        Console.WriteLine(array[row-1,column-1]);
+    }
+    
 }
 
 method(array(5,6));
