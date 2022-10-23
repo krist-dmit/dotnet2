@@ -1,36 +1,42 @@
-﻿//Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
-//[3 7 22 2 78] -> 76
+﻿Random rnd = new Random();
 
-Random rnd = new Random();
-double[] Array(int count)
+int[] Array (int count)
+
 {
-    double[] massiv = new double[count];
-    int i = 0; 
-    for(i = 0; i<count; i++)
+    int[] result = new int[count];
+    int i = 0;
+    for (i=0; i < count; i++)
     {
-        massiv[i] = rnd.NextDouble()*100;
+        result[i] = rnd.Next(1,8);
     }
-    return massiv;
- }
-
- double Schet(double [] massiv)
- {
-    double max = massiv[0];
-    double min = massiv[0];
-    double result = 0;
-    int count = massiv.Length;
-    for (int i = 1; i < count; i++)
-    {
-        if(max<massiv[i])
-        {
-        max = massiv[i];
-        }
-        if(min>massiv[i])
-        {
-        min = massiv[i];
-        }
-    }
-    result = max - min;
     return result;
- }
- Console.WriteLine(Schet(Array(4)));
+}
+
+int Max (int[] array)
+{
+    int max = array[0];
+    for (int i = 1; i < array.Length; i++ )
+    {
+        if (array[i]>max) 
+        {
+            max = array[i];
+        }
+    }
+    return max;
+}
+
+int Min (int[] array)
+{
+    int min = array[0];
+    for (int i = 1; i < array.Length; i++ )
+    {
+        if (array[i]< min)
+        {
+            min = array[i];
+        }
+    }
+    return min;
+}
+int[] array = Array(8);
+Console.WriteLine(string.Join(' ',array));
+Console.WriteLine(Max(array)-Min(array));

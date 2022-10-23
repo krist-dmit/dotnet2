@@ -20,6 +20,6 @@ int[] Array (int count)
     return result;
 }
 
-string text = "Введите 8 чисел: ";
+//string text = "Введите 8 чисел: ";
 
 Console.WriteLine(string.Join(' ', Array(8)));
