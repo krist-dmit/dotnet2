@@ -15,7 +15,7 @@ int[,] Array1 (int row, int column)
 }
 
 Console.WriteLine("Первая матрица: ");
-int[,] array1 = Array1(2,4);
+int[,] array1 = Array1(2,3);
 
 Console.WriteLine("Вторая матрица: ");
 int[,] array2 = Array1(4,3);
