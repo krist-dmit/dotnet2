@@ -10,7 +10,8 @@ int vozvedenie (int osnovanie, int stepen)
 {
     int result = 1;
     int i = 0;
-    for (i = 0; i < stepen; i++){
+    for (i = 0; i < stepen; i++)
+    {
         result = result * osnovanie;
     }
     return result;
